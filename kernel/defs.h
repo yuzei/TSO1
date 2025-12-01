@@ -151,6 +151,8 @@ void            uartputc_sync(int);
 int             uartgetc(void);
 
 // vm.c
+int             mrdprotect(void*, int);
+int             munrdprotect(void*, int);
 void            kvminit(void);
 void            kvminithart(void);
 void            kvmmap(pagetable_t, uint64, uint64, uint64, int);
